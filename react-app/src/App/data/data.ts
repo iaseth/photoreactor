@@ -1,2 +1,3 @@
 
-export interface Foo {}
+export * from "./cssprops";
+export * from "./picture";

@@ -1,0 +1,10 @@
+{
+	"title": "Example",
+	"height": "1080px",
+	"width": "1080px",
+	"padding": "100px 100px",
+	"backgroundColor": "firebrick",
+	"nodes": [
+		{ "text": "Hello, World", "fontSize": "40px" }
+	]
+}
