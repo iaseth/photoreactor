@@ -62,9 +62,7 @@ export const defaultContainerStyles: CssProps = {
 	right: "auto",
 	bottom: "auto",
 	left: "auto",
-	zIndex: 0,
-
-	cursorColor: "green",
+	zIndex: 0
 };
 
 
@@ -97,7 +95,5 @@ export const defaultNodeStyles: CssProps = {
 	right: "auto",
 	bottom: "auto",
 	left: "auto",
-	zIndex: 0,
-
-	cursorColor: "green",
+	zIndex: 0
 };
