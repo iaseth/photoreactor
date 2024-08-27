@@ -27,5 +27,5 @@ body {
 }
 
 .button {
-	@apply bg-blue-500 text-white font-bold px-6 py-3 rounded;
+	@apply bg-blue-500 text-white font-bold px-6 py-4 rounded;
 }

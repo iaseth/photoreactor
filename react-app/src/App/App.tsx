@@ -8,6 +8,7 @@ import { PictureDS, examplePicture } from './data/picture';
 import Renderer from './components/Renderer/Renderer';
 
 
+
 red.addIcons(rediconsJson.icons);
 
 const DEFAULT_TEXT: string = JSON.stringify(examplePicture);
@@ -37,12 +38,12 @@ export default function App () {
 		<div className="bg-zinc-900 text-white">
 			<Header />
 
-			<main className="min-h-screen py-12">
-				<section className="max-w-xl mx-auto px-4">
-					<textarea className="textarea" value={text} onChange={e => setText(e.target.value)}></textarea>
+			<main className="min-h-screen max-w-xl mx-auto px-4 py-12 space-y-6">
+				<section className="">
+					<textarea className="textarea" rows={10} value={text} onChange={e => setText(e.target.value)}></textarea>
 				</section>
 
-				<section className='grid grid-cols-2 gap-x-4'>
+				<section className='grid grid-cols-2 gap-x-6'>
 					<button className='button' onClick={startRenderer}>Render</button>
 					<button className='button' onClick={() => setText(DEFAULT_TEXT)}>Reset</button>
 				</section>
