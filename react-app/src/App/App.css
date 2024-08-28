@@ -19,7 +19,7 @@ h6, .h6, .p6 { @apply text-xs; }
 .H6, .P6 { @apply text-3xl; }
 
 body {
-	@apply bg-zinc-900 text-zinc-200 leading-7;
+	@apply bg-zinc-900 text-zinc-200 leading-normal;
 
 }
 

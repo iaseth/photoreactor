@@ -1,4 +1,4 @@
-import { PictureNodeDS, defaultNodeStyles as defaults } from "../../../data";
+import { PictureNodeDS } from "../../../data";
 
 
 
@@ -11,38 +11,38 @@ export default function PictureNode ({
 }: PictureNodeProps) {
 
 	const style = {
-		height: node.height || defaults.height,
-		width: node.width || defaults.width,
-		padding: node.padding || defaults.padding,
-		margin: node.margin || defaults.margin,
+		height: node.height,
+		width: node.width,
+		padding: node.padding,
+		margin: node.margin,
 
-		fontSize: node.fontSize || defaults.fontSize,
-		fontFamily: node.fontFamily || defaults.fontFamily,
-		fontWeight: node.fontWeight || defaults.fontWeight,
-		lineHeight: node.lineHeight || defaults.lineHeight,
-		textAlign: node.textAlign || defaults.textAlign,
+		fontSize: node.fontSize,
+		fontFamily: node.fontFamily,
+		fontWeight: node.fontWeight,
+		lineHeight: node.lineHeight,
+		textAlign: node.textAlign,
 
-		color: node.color || defaults.color,
-		backgroundColor: node.backgroundColor || defaults.backgroundColor,
+		color: node.color,
+		backgroundColor: node.backgroundColor,
 
-		borderColor: node.borderColor || defaults.borderColor,
-		borderStyle: node.borderStyle || defaults.borderStyle,
-		borderWidth: node.borderWidth || defaults.borderWidth,
+		borderColor: node.borderColor,
+		borderStyle: node.borderStyle,
+		borderWidth: node.borderWidth,
 
-		outlineColor: node.outlineColor || defaults.outlineColor,
-		outlineStyle: node.outlineStyle || defaults.outlineStyle,
-		outlineWidth: node.outlineWidth || defaults.outlineWidth,
+		outlineColor: node.outlineColor,
+		outlineStyle: node.outlineStyle,
+		outlineWidth: node.outlineWidth,
 
-		position: node.position || defaults.position,
-		top: node.top || defaults.top,
-		right: node.right || defaults.right,
-		bottom: node.bottom || defaults.bottom,
-		left: node.left || defaults.left,
-		zIndex: node.zIndex || defaults.zIndex,
+		position: node.position,
+		top: node.top,
+		right: node.right,
+		bottom: node.bottom,
+		left: node.left,
+		zIndex: node.zIndex,
 	};
 
 	return (
-		<div style={style}>
+		<div className={node.className} style={style}>
 			{node.text || ""}
 			{node.children && node.children.map((ch, k) => <PictureNode key={k} node={ch} />)}
 		</div>

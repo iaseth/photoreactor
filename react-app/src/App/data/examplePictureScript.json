@@ -11,7 +11,7 @@
     "borderWidth":"10px",
     "borderStyle":"solid",
     "children":[
-        {"text":"Photoreactor","fontSize":"120px"},
+        {"text":"Photoreactor","fontSize":"96px", "backgroundColor": "#444"},
         {"text":"Render JSON to HTML","fontSize":"48px", "padding": "80px 0px"},
         {"text":"Created by Ankur Seth", "fontSize":"32px", "padding": "400px 0px 0px 0px"}
     ]
