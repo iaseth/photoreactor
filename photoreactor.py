@@ -47,15 +47,18 @@ def main():
 		"title":"Example",
 		"height":"1080px",
 		"width":"1080px",
-		"padding":"100px 100px",
-		"backgroundColor":"#444",
-		"color":"#ddd",
-		"borderColor":"yellow",
-		"borderWidth":"4px",
+		"padding":"200px 100px",
+		"backgroundColor":"#dc2626",
+		"color":"#eee",
+		"fontFamily":"Ubuntu",
+		"fontWeight":"700",
+		"borderColor":"#ef4444",
+		"borderWidth":"10px",
 		"borderStyle":"solid",
 		"nodes":[
-			{"text":"Taking Screenshots","fontSize":"72px"},
-			{"text":"with Python","fontSize":"48px", "padding": "100px 0px"}
+			{"text":"Photoreactor","fontSize":"120px"},
+			{"text":"Taking Screenshots with Python","fontSize":"48px", "padding": "80px 0px"},
+			{"text":"Created by Ankur Seth", "fontSize":"32px", "padding": "400px 0px 0px 0px"}
 		]
 	}
 	script_json = json.dumps(script)
