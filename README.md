@@ -6,6 +6,10 @@ using JSON scripts, and renders it as HTML in the browser.
 The combination of Photoreactor and Playwright can be useful for
 creating Thumbnails/Screenshots programmatically.
 
+I am using [`readmix`](https://github.com/iaseth/readmix) for generating this README.
+You can view the source file [here](https://github.com/iaseth/photoreactor/blob/master/README.md.rx).
+
+
 ![First Example](png/first-example.png)
 
 The above image was rendered using the following JSON script.
@@ -26,7 +30,7 @@ The above image was rendered using the following JSON script.
     "children":[
         {"text":"Photoreactor","fontSize":"120px"},
         {"text":"Taking Screenshots with Python","fontSize":"48px", "padding": "80px 0px"},
-        {"text":"Created by Ankur Seth", "fontSize":"32px", "padding": "400px 0px 0px 0px"}
+        {"text":"Created by Ankur Seth", "fontSize":"32px", "padding": "200px 0px 0px 0px"}
     ]
 }
 ```
@@ -139,7 +143,7 @@ def main():
 		"children":[
 			{"text":"Photoreactor","fontSize":"120px"},
 			{"text":"Taking Screenshots with Python","fontSize":"48px", "padding": "80px 0px"},
-			{"text":"Created by Ankur Seth", "fontSize":"32px", "padding": "400px 0px 0px 0px"}
+			{"text":"Created by Ankur Seth", "fontSize":"32px", "padding": "200px 0px 0px 0px"}
 		]
 	}
 
