@@ -23,7 +23,7 @@ body {
 }
 
 .textarea {
-	@apply block w-full bg-zinc-950 px-3 py-2 font-mono resize-none overflow-hidden;
+	@apply block w-full bg-zinc-950 px-3 py-2 font-mono resize-none overflow-x-hidden overflow-y-scroll;
 }
 
 .button {

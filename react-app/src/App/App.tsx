@@ -34,6 +34,17 @@ export default function App () {
 		return <Renderer {...{picture, stopRenderer}} />;
 	}
 
+	const indentInput = () => {
+		try {
+			const jo = JSON.parse(text);
+			const jsonText = JSON.stringify(jo, null, "\t");
+			setText(jsonText);
+		} catch (error) {
+			console.log(`Error happened while indenting!`);
+		}
+	};
+	const resetInput = () => setText(DEFAULT_TEXT);
+
 	return (
 		<div className="bg-zinc-900 text-white">
 			<Header />
@@ -43,9 +54,10 @@ export default function App () {
 					<textarea id="inputTextArea" className="textarea" rows={10} value={text} onChange={e => setText(e.target.value)}></textarea>
 				</section>
 
-				<section className='grid grid-cols-2 gap-x-6'>
+				<section className='grid grid-cols-3 gap-x-6'>
 					<button id="renderButton" className='button' onClick={startRenderer}>Render</button>
-					<button id="resetButton" className='button' onClick={() => setText(DEFAULT_TEXT)}>Reset</button>
+					<button id="indentButton" className='button' onClick={indentInput}>Indent</button>
+					<button id="resetButton" className='button' onClick={resetInput}>Reset</button>
 				</section>
 			</main>
 
