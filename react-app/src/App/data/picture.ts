@@ -11,7 +11,7 @@ export interface PictureNodeDS extends CssProps {
 
 export interface PictureDS extends CssProps {
 	title: string, // purpose?
-	nodes: PictureNodeDS[]
+	children: PictureNodeDS[]
 }
 
 export const examplePicture: PictureDS = examplePictureScript;

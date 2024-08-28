@@ -34,7 +34,7 @@ export default function Renderer ({
 	return (
 		<main className="w-screen h-screen overflow-hidden flex">
 			<section className="m-auto relative overflow-hidden" style={style} onClick={stopRenderer}>
-				{picture.nodes.map((node, k) => <PictureNode key={k} node={node} />)}
+				{picture.children.map((node, k) => <PictureNode key={k} node={node} />)}
 			</section>
 		</main>
 	);
