@@ -1,6 +1,10 @@
 
 # Photoreactor
-Photoreactor allows you to render HTML using JSON scripts.
+Photoreactor is a `React` webapp that allows you to specify document structure
+using JSON scripts, and renders it as HTML in the browser.
+
+The combination of Photoreactor and Playwright can be useful for
+creating Thumbnails/Screenshots programmatically.
 
 ![First Example](png/first-example.png)
 
@@ -26,6 +30,55 @@ The above image was rendered using the following JSON script.
     ]
 }
 ```
+
+
+### What is supported
+Currently, all rendered elements are `div` and they can contain any number of children
+and/or a single `text` node inside them.
+
+The following CSS properties are supported on each element:
+
+* `backgroundColor`
+* `color`
+
+* `width`
+* `height`
+* `padding`
+* `margin`
+
+* `fontFamily`
+* `fontSize`
+* `fontWeight`
+* `lineHeight`
+* `textAlign`
+
+* `borderColor`
+* `borderWidth`
+* `borderStyle`
+* `outlineColor`
+* `outlineWidth`
+* `outlineStyle`
+
+* `position`
+* `top`
+* `right`
+* `bottom`
+* `left`
+* `zIndex`
+
+
+
+### What is not supported yet
+The following features are not yet supported in Photoreact
+but will be supported in future:
+
+* Support for Tailwind classes (atleast the background/text/border color related ones)
+* More CSS properties
+* Images (uploaded/URLs)
+* Videos (uploaded)
+* Custom Fonts (especially Google Fonts)
+
+
 
 ### Capturing Screenshots Programmatically
 The below script captures Screenshots using Python and Playwright.
