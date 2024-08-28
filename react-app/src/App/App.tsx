@@ -40,12 +40,12 @@ export default function App () {
 
 			<main className="min-h-screen max-w-xl mx-auto px-4 py-12 space-y-6">
 				<section className="">
-					<textarea className="textarea" rows={10} value={text} onChange={e => setText(e.target.value)}></textarea>
+					<textarea id="inputTextArea" className="textarea" rows={10} value={text} onChange={e => setText(e.target.value)}></textarea>
 				</section>
 
 				<section className='grid grid-cols-2 gap-x-6'>
-					<button className='button' onClick={startRenderer}>Render</button>
-					<button className='button' onClick={() => setText(DEFAULT_TEXT)}>Reset</button>
+					<button id="renderButton" className='button' onClick={startRenderer}>Render</button>
+					<button id="resetButton" className='button' onClick={() => setText(DEFAULT_TEXT)}>Reset</button>
 				</section>
 			</main>
 
