@@ -49,12 +49,12 @@ export default function App () {
 		<div className="bg-zinc-900 text-white">
 			<Header />
 
-			<main className="min-h-screen max-w-xl mx-auto px-4 py-12 space-y-6">
+			<main className="min-h-screen max-w-xl mx-auto px-4 pt-6 py-12 space-y-6">
 				<section className="">
-					<textarea id="inputTextArea" className="textarea" rows={10} value={text} onChange={e => setText(e.target.value)}></textarea>
+					<textarea id="inputTextArea" className="textarea" rows={16} value={text} onChange={e => setText(e.target.value)}></textarea>
 				</section>
 
-				<section className='grid grid-cols-3 gap-x-6'>
+				<section className='grid grid-cols-3 gap-x-4'>
 					<button id="renderButton" className='button' onClick={startRenderer}>Render</button>
 					<button id="indentButton" className='button' onClick={indentInput}>Indent</button>
 					<button id="resetButton" className='button' onClick={resetInput}>Reset</button>
