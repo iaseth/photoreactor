@@ -50,7 +50,7 @@ def main():
 		"borderColor":"#ef4444",
 		"borderWidth":"10px",
 		"borderStyle":"solid",
-		"nodes":[
+		"children":[
 			{"text":"Photoreactor","fontSize":"120px"},
 			{"text":"Taking Screenshots with Python","fontSize":"48px", "padding": "80px 0px"},
 			{"text":"Created by Ankur Seth", "fontSize":"32px", "padding": "400px 0px 0px 0px"}
