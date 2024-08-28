@@ -38,11 +38,6 @@ def record_screencast(script_json, resolution, screenshot_file_path):
 
 
 def main():
-	resolution = {
-		'height': 1080,
-		'width': 1080
-	}
-
 	script = {
 		"title":"Example",
 		"height":"1080px",
@@ -61,8 +56,12 @@ def main():
 			{"text":"Created by Ankur Seth", "fontSize":"32px", "padding": "400px 0px 0px 0px"}
 		]
 	}
-	script_json = json.dumps(script)
 
+	script_json = json.dumps(script)
+	resolution = {
+		'height': 1080,
+		'width': 1080
+	}
 	screenshot_file_path = "screenshot.png"
 
 	record_screencast(script_json, resolution, screenshot_file_path)
