@@ -32,43 +32,41 @@ The above image was rendered using the following JSON script.
 ```
 
 
-### What is supported
+## What is supported
 Currently, all rendered elements are `div` and they can contain any number of children
 and/or a single `text` node inside them.
 
 The following CSS properties are supported on each element:
 
-* `backgroundColor`
-* `color`
-
-* `width`
-* `height`
-* `padding`
-* `margin`
-
-* `fontFamily`
-* `fontSize`
-* `fontWeight`
-* `lineHeight`
-* `textAlign`
-
-* `borderColor`
-* `borderWidth`
-* `borderStyle`
-* `outlineColor`
-* `outlineWidth`
-* `outlineStyle`
-
-* `position`
-* `top`
-* `right`
-* `bottom`
-* `left`
-* `zIndex`
+| Property          | CSS Name           |
+| ----------------- | ------------------ |
+| `backgroundColor` | `background-color` |
+| `color`           | `color`            |
+| `width`           | `width`            |
+| `height`          | `height`           |
+| `padding`         | `padding`          |
+| `margin`          | `margin`           |
+| `fontFamily`      | `font-family`      |
+| `fontSize`        | `font-size`        |
+| `fontWeight`      | `font-weight`      |
+| `lineHeight`      | `line-height`      |
+| `textAlign`       | `text-align`       |
+| `borderColor`     | `border-color`     |
+| `borderWidth`     | `border-width`     |
+| `borderStyle`     | `border-style`     |
+| `outlineColor`    | `outline-color`    |
+| `outlineWidth`    | `outline-width`    |
+| `outlineStyle`    | `outline-style`    |
+| `position`        | `position`         |
+| `top`             | `top`              |
+| `right`           | `right`            |
+| `bottom`          | `bottom`           |
+| `left`            | `left`             |
+| `zIndex`          | `z-index`          |
 
 
 
-### What is not supported yet
+## What is not supported yet
 The following features are not yet supported in Photoreact
 but will be supported in future:
 
@@ -80,7 +78,7 @@ but will be supported in future:
 
 
 
-### Capturing Screenshots Programmatically
+## Capturing Screenshots Programmatically
 The below script captures Screenshots using Python and Playwright.
 
 ```py
