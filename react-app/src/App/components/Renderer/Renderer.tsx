@@ -24,7 +24,7 @@ export default function Renderer ({
 		textAlign: picture.textAlign || defaults.textAlign,
 
 		color: picture.color || defaults.color,
-		backgroundColor: picture.background || defaults.background,
+		backgroundColor: picture.backgroundColor || defaults.backgroundColor,
 
 		borderColor: picture.borderColor || defaults.borderColor,
 		borderStyle: picture.borderStyle || defaults.borderStyle,

@@ -23,7 +23,7 @@ export default function PictureNode ({
 		textAlign: node.textAlign || defaults.textAlign,
 
 		color: node.color || defaults.color,
-		backgroundColor: node.background || defaults.background,
+		backgroundColor: node.backgroundColor || defaults.backgroundColor,
 
 		borderColor: node.borderColor || defaults.borderColor,
 		borderStyle: node.borderStyle || defaults.borderStyle,

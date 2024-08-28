@@ -14,7 +14,7 @@ export interface CssProps {
 	textAlign?: "inherit" | "left" | "right" | "center" | "justify",
 
 	color?: string,
-	background?: string,
+	backgroundColor?: string,
 
 	borderColor?: string,
 	borderStyle?: string,
@@ -47,7 +47,7 @@ export const defaultContainerStyles: CssProps = {
 	textAlign: "left" as const,
 
 	color: "rgb(244 244 244)",
-	background: "#18181b",
+	backgroundColor: "#18181b",
 
 	borderColor: "transparent",
 	borderStyle: "solid",
@@ -80,7 +80,7 @@ export const defaultNodeStyles: CssProps = {
 	textAlign: "inherit" as const,
 
 	color: "inherit",
-	background: "transparent",
+	backgroundColor: "transparent",
 
 	borderColor: "inherit",
 	borderStyle: "solid",

@@ -4,6 +4,9 @@
 	"width": "1080px",
 	"padding": "100px 100px",
 	"backgroundColor": "firebrick",
+	"borderColor": "yellow",
+	"borderWidth": "4px",
+	"borderStyle": "solid",
 	"nodes": [
 		{ "text": "Hello, World", "fontSize": "40px" }
 	]
