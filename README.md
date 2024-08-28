@@ -36,7 +36,7 @@ The above image was rendered using the following JSON script.
 Currently, all rendered elements are `div` and they can contain any number of children
 and/or a single `text` node inside them.
 
-The following CSS properties are supported on each element:
+* The following CSS properties are supported on each element:
 
 | Property          | CSS Name           |
 | ----------------- | ------------------ |
@@ -64,14 +64,16 @@ The following CSS properties are supported on each element:
 | `left`            | `left`             |
 | `zIndex`          | `z-index`          |
 
+* Tailwind color classes - all `background-color (bg-*)`, `color (text-*)` and  `border-color (border-*)` classes are supported.
+
 
 
 ## What is not supported yet
 The following features are not yet supported in Photoreact
 but will be supported in future:
 
-* Support for Tailwind classes (atleast the background/text/border color related ones)
 * More CSS properties
+* Support for more Tailwind classes
 * Images (uploaded/URLs)
 * Videos (uploaded)
 * Custom Fonts (especially Google Fonts)
