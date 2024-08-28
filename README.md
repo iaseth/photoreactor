@@ -97,65 +97,94 @@ APP_REMOTE_URL = "https://photoreactor.redpapr.com/"
 
 
 def record_screencast(script_json, resolution, screenshot_file_path):
-    with sync_playwright() as playwright:
-        browser = playwright.chromium.launch(headless=True)
-        context = browser.new_context(viewport=resolution)
-        print("\tCreated browser context")
+	with sync_playwright() as playwright:
+		browser = playwright.chromium.launch(headless=True)
+		context = browser.new_context(viewport=resolution)
+		print("\tCreated browser context")
 
-        page = context.new_page()
-        t1 = time.time()
-        print("\tCreated new page")
-        page.set_default_timeout(0)
-        page.goto(APP_REMOTE_URL)
-        t2 = time.time()
-        td = round(t2-t1, 1)
-        print(f"\tOpened photoreactor in {td} seconds")
+		page = context.new_page()
+		t1 = time.time()
+		print("\tCreated new page")
+		page.set_default_timeout(0)
+		page.goto(APP_REMOTE_URL)
+		t2 = time.time()
+		td = round(t2-t1, 1)
+		print(f"\tOpened photoreactor in {td} seconds")
 
-        page.locator("#inputTextArea").fill(script_json)
-        page.locator("#renderButton").click()
-        page.wait_for_timeout(1000) # ensures that renderer has started
-        page.screenshot(path=screenshot_file_path);
+		page.locator("#inputTextArea").fill(script_json)
+		page.locator("#renderButton").click()
+		page.wait_for_timeout(1000) # ensures that renderer has started
+		page.screenshot(path=screenshot_file_path);
 
-        page.close()
-        context.close()
-        browser.close()
+		page.close()
+		context.close()
+		browser.close()
 
-        print(f"\t\tSaved screenshot: {screenshot_file_path}")
+		print(f"\t\tSaved screenshot: {screenshot_file_path}")
 
 
 def main():
-    script = {
-        "title":"Example",
-        "height":"1080px",
-        "width":"1080px",
-        "padding":"200px 100px",
-        "backgroundColor":"#dc2626",
-        "color":"#eee",
-        "fontFamily":"Ubuntu",
-        "fontWeight":"700",
-        "borderColor":"#ef4444",
-        "borderWidth":"10px",
-        "borderStyle":"solid",
-        "children":[
-            {"text":"Photoreactor","fontSize":"120px"},
-            {"text":"Taking Screenshots with Python","fontSize":"48px", "padding": "80px 0px"},
-            {"text":"Created by Ankur Seth", "fontSize":"32px", "padding": "400px 0px 0px 0px"}
-        ]
-    }
+	script = {
+		"title":"Example",
+		"height":"1080px",
+		"width":"1080px",
+		"padding":"200px 100px",
+		"backgroundColor":"#dc2626",
+		"color":"#eee",
+		"fontFamily":"Ubuntu",
+		"fontWeight":"700",
+		"borderColor":"#ef4444",
+		"borderWidth":"10px",
+		"borderStyle":"solid",
+		"children":[
+			{"text":"Photoreactor","fontSize":"120px"},
+			{"text":"Taking Screenshots with Python","fontSize":"48px", "padding": "80px 0px"},
+			{"text":"Created by Ankur Seth", "fontSize":"32px", "padding": "400px 0px 0px 0px"}
+		]
+	}
 
-    script_json = json.dumps(script)
-    resolution = {
-        'height': 1080,
-        'width': 1080
-    }
-    screenshot_file_path = "screenshot.png"
+	script_json = json.dumps(script)
+	resolution = {
+		'height': 1080,
+		'width': 1080
+	}
+	screenshot_file_path = "screenshot.png"
 
-    record_screencast(script_json, resolution, screenshot_file_path)
+	record_screencast(script_json, resolution, screenshot_file_path)
 
 
 if __name__ == '__main__':
-    main()
+	main()
 
 ```
+
+
+## License
+MIT License
+
+Copyright (c) Ankur Seth.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+## Credit
+
+This file was generated using [`readmix`](https://github.com/iaseth/readmix).
 
 
