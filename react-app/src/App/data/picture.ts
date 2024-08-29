@@ -4,6 +4,7 @@ import examplePictureScript from './examplePictureScript.json';
 
 
 export interface PictureNodeDS extends CssProps {
+	tagName?: string,
 	text?: string,
 	className?: string,
 	children?: PictureNodeDS[]

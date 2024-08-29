@@ -9,6 +9,8 @@ interface PictureNodeProps {
 export default function PictureNode ({
 	node
 }: PictureNodeProps) {
+	const tagName = node.tagName || "div"; 
+	const Tag = tagName as keyof JSX.IntrinsicElements;
 
 	const style = {
 		height: node.height,
@@ -42,9 +44,9 @@ export default function PictureNode ({
 	};
 
 	return (
-		<div className={node.className} style={style}>
+		<Tag className={node.className} style={style}>
 			{node.text || ""}
 			{node.children && node.children.map((ch, k) => <PictureNode key={k} node={ch} />)}
-		</div>
+		</Tag>
 	);
 }
