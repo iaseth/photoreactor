@@ -17,9 +17,9 @@ The above image was rendered using the following JSON script.
 ```json
 {
     "title":"Example",
-    "height":"1080px",
+    "height":"480px",
     "width":"1080px",
-    "padding":"200px 100px",
+    "padding":"60px 100px",
     "backgroundColor":"#dc2626",
     "color":"#eee",
     "fontFamily":"Ubuntu",
@@ -28,9 +28,9 @@ The above image was rendered using the following JSON script.
     "borderWidth":"10px",
     "borderStyle":"solid",
     "children":[
-        {"text":"Photoreactor","fontSize":"120px"},
-        {"text":"Taking Screenshots with Python","fontSize":"48px", "padding": "80px 0px"},
-        {"text":"Created by Ankur Seth", "fontSize":"32px", "padding": "200px 0px 0px 0px"}
+        {"text":"Photoreactor","fontSize":"96px"},
+        {"text":"Taking Screenshots with Python","fontSize":"48px", "padding": "10px 0px"},
+        {"text":"Created by Ankur Seth", "fontSize":"32px", "padding": "60px 0px 0px 0px"}
     ]
 }
 ```
@@ -130,9 +130,9 @@ def record_screencast(script_json, resolution, screenshot_file_path):
 def main():
 	script = {
 		"title":"Example",
-		"height":"1080px",
+		"height":"480px",
 		"width":"1080px",
-		"padding":"200px 100px",
+		"padding":"60px 100px",
 		"backgroundColor":"#dc2626",
 		"color":"#eee",
 		"fontFamily":"Ubuntu",
@@ -141,15 +141,15 @@ def main():
 		"borderWidth":"10px",
 		"borderStyle":"solid",
 		"children":[
-			{"text":"Photoreactor","fontSize":"120px"},
-			{"text":"Taking Screenshots with Python","fontSize":"48px", "padding": "80px 0px"},
-			{"text":"Created by Ankur Seth", "fontSize":"32px", "padding": "200px 0px 0px 0px"}
+			{"text":"Photoreactor","fontSize":"96px"},
+			{"text":"Taking Screenshots with Python","fontSize":"48px", "padding": "10px 0px"},
+			{"text":"Created by Ankur Seth", "fontSize":"32px", "padding": "60px 0px 0px 0px"}
 		]
 	}
 
 	script_json = json.dumps(script)
 	resolution = {
-		'height': 1080,
+		'height': 480,
 		'width': 1080
 	}
 	screenshot_file_path = "screenshot.png"
