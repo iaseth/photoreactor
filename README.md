@@ -10,7 +10,7 @@ I am using [`readmix`](https://github.com/iaseth/readmix) for generating this RE
 You can view the source file [here](https://github.com/iaseth/photoreactor/blob/master/README.md.rx).
 
 
-![First Example](png/first-example.png)
+![Example Image](png/second-example.png)
 
 The above image was rendered using the following JSON script.
 

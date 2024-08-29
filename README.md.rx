@@ -10,7 +10,7 @@ I am using {{ gh.link("iaseth/readmix", "readmix") }} for generating this README
 You can view the source file [here](https://github.com/iaseth/photoreactor/blob/master/README.md.rx).
 
 
-![First Example](png/first-example.png)
+![Example Image](png/second-example.png)
 
 The above image was rendered using the following JSON script.
 
