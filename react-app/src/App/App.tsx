@@ -52,7 +52,7 @@ export default function App () {
 			<Header />
 
 			<main className="min-h-screen max-w-xl mx-auto px-4 pt-0 py-12 space-y-6">
-				<section className="grid grid-cols-3 gap-4">
+				<section className="grid grid-cols-2 md:grid-cols-3 gap-4">
 					{examplePictures.map((example, k) => <ExampleButton text={example.title}
 						onClick={() => setText(indentedJson(example))} />)}
 				</section>
@@ -61,7 +61,7 @@ export default function App () {
 					<textarea id="inputTextArea" className="textarea" rows={16} spellCheck={false} value={text} onChange={e => setText(e.target.value)}></textarea>
 				</section>
 
-				<section className='grid grid-cols-3 gap-x-4'>
+				<section className='grid grid-cols-2 gap-4'>
 					<button id="renderButton" className='button' onClick={startRenderer}>Render</button>
 					<button id="indentButton" className='button' onClick={indentInput}>Indent</button>
 					<button id="resetButton" className='button' onClick={resetInput}>Reset</button>
