@@ -2,7 +2,7 @@ import './App.css';
 
 import { red } from 'redicons';
 import rediconsJson from './redicons.json';
-import { ExampleButton, Footer, Header } from './components';
+import { Footer, Header } from './components';
 import React from 'react';
 import { PictureDS, examplePictures } from './data/picture';
 import Renderer from './components/Renderer/Renderer';
@@ -60,17 +60,17 @@ export default function App () {
 		<div className="bg-zinc-900 text-white">
 			<Header />
 
-			<main className="min-h-screen max-w-xl mx-auto px-4 pt-0 py-12 space-y-6">
+			<main className="min-h-screen max-w-3xl mx-auto px-6 pt-0 py-12 space-y-6">
 				<section className="grid grid-cols-2 md:grid-cols-3 gap-4">
-					{examplePictures.map((example, k) => <ExampleButton key={k} text={example.title}
-						onClick={() => setText(indentedJson(example))} />)}
+					{examplePictures.map((example, k) => <button key={k} className="button"
+						onClick={() => setText(indentedJson(example))}>{example.title}</button>)}
 				</section>
 
 				<section className="rounded-lg overflow-hidden">
 					<textarea id="inputTextArea" className="textarea" rows={16} spellCheck={false} value={text} onChange={e => setText(e.target.value)}></textarea>
 				</section>
 
-				<section className='grid grid-cols-2 gap-x-4 gap-y-6'>
+				<section className='grid grid-cols-2 lg:grid-cols-4 gap-4'>
 					<button id="renderButton" className='button' onClick={startRenderer}>Render</button>
 					<button id="resetButton" className='button' onClick={resetInput}>Reset</button>
 					<button id="indentButton" className='button' onClick={indentInput}>Indent</button>
