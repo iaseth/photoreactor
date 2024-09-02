@@ -62,19 +62,19 @@ export default function App () {
 
 			<main className="min-h-screen max-w-3xl mx-auto px-6 pt-0 py-12 space-y-6">
 				<section className="grid grid-cols-2 md:grid-cols-3 gap-4">
-					{examplePictures.map((example, k) => <button key={k} className="button"
+					{examplePictures.map((example, k) => <button key={k} className="button focus"
 						onClick={() => setText(indentedJson(example))}>{example.title}</button>)}
 				</section>
 
-				<section className="rounded-lg overflow-hidden">
+				<section>
 					<textarea id="inputTextArea" className="textarea" rows={16} spellCheck={false} value={text} onChange={e => setText(e.target.value)}></textarea>
 				</section>
 
 				<section className='grid grid-cols-2 lg:grid-cols-4 gap-4'>
-					<button id="renderButton" className='button' onClick={startRenderer}>Render</button>
-					<button id="resetButton" className='button' onClick={resetInput}>Reset</button>
-					<button id="indentButton" className='button' onClick={indentInput}>Indent</button>
-					<button id="minifyButton" className='button' onClick={minifyInput}>Minify</button>
+					<button id="renderButton" className='button focus' onClick={startRenderer}>Render</button>
+					<button id="resetButton" className='button focus' onClick={resetInput}>Reset</button>
+					<button id="indentButton" className='button focus' onClick={indentInput}>Indent</button>
+					<button id="minifyButton" className='button focus' onClick={minifyInput}>Minify</button>
 				</section>
 			</main>
 
