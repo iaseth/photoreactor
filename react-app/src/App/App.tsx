@@ -2,7 +2,7 @@ import './App.css';
 
 import { red } from 'redicons';
 import rediconsJson from './redicons.json';
-import { Footer, Header } from './components';
+import { ExampleButton, Footer, Header } from './components';
 import React from 'react';
 import { PictureDS, examplePictures } from './data/picture';
 import Renderer from './components/Renderer/Renderer';
@@ -51,7 +51,12 @@ export default function App () {
 		<div className="bg-zinc-900 text-white">
 			<Header />
 
-			<main className="min-h-screen max-w-xl mx-auto px-4 pt-6 py-12 space-y-6">
+			<main className="min-h-screen max-w-xl mx-auto px-4 pt-0 py-12 space-y-6">
+				<section className="grid grid-cols-3 gap-4">
+					{examplePictures.map((example, k) => <ExampleButton text={example.title}
+						onClick={() => setText(indentedJson(example))} />)}
+				</section>
+
 				<section className="rounded-lg overflow-hidden">
 					<textarea id="inputTextArea" className="textarea" rows={16} spellCheck={false} value={text} onChange={e => setText(e.target.value)}></textarea>
 				</section>

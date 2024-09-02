@@ -1,8 +1,2 @@
 
-
-
-export function Button () {
-	return (
-		<button>Ok</button>
-	);
-}
+export {default as ExampleButton} from './ExampleButton/ExampleButton';
