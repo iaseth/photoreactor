@@ -6,6 +6,8 @@ using JSON scripts, and renders it as HTML in the browser.
 The combination of Photoreactor and Playwright can be useful for
 creating Thumbnails/Screenshots programmatically.
 
+![Photoreactor Screenshot](png/Photoreactor-Screenshot.png)
+
 I am using {{ gh.link("iaseth/readmix", "readmix") }} for generating this README.
 You can view the source file [here](https://github.com/iaseth/photoreactor/blob/master/README.md.rx).
 
