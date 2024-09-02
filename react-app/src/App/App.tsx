@@ -6,12 +6,13 @@ import { Footer, Header } from './components';
 import React from 'react';
 import { PictureDS, examplePicture } from './data/picture';
 import Renderer from './components/Renderer/Renderer';
+import { indentedJson } from './utils';
 
 
 
 red.addIcons(rediconsJson.icons);
 
-const DEFAULT_TEXT: string = JSON.stringify(examplePicture);
+const DEFAULT_TEXT: string = indentedJson(examplePicture);
 
 export default function App () {
 	const [text, setText] = React.useState(DEFAULT_TEXT);
@@ -37,7 +38,7 @@ export default function App () {
 	const indentInput = () => {
 		try {
 			const jo = JSON.parse(text);
-			const jsonText = JSON.stringify(jo, null, "\t");
+			const jsonText = indentedJson(jo);
 			setText(jsonText);
 		} catch (error) {
 			console.log(`Error happened while indenting!`);
@@ -50,8 +51,8 @@ export default function App () {
 			<Header />
 
 			<main className="min-h-screen max-w-xl mx-auto px-4 pt-6 py-12 space-y-6">
-				<section className="">
-					<textarea id="inputTextArea" className="textarea" rows={16} value={text} onChange={e => setText(e.target.value)}></textarea>
+				<section className="rounded-lg overflow-hidden">
+					<textarea id="inputTextArea" className="textarea" rows={16} spellCheck={false} value={text} onChange={e => setText(e.target.value)}></textarea>
 				</section>
 
 				<section className='grid grid-cols-3 gap-x-4'>

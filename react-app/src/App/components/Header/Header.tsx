@@ -11,7 +11,6 @@ export default function Header ({}: HeaderProps) {
 			<h4>
 				<a href="https://photoreactor.redpapr.com/">Photoreactor</a>
 			</h4>
-			<h6>by Ankur Seth</h6>
 		</header>
 	);
 }

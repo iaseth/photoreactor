@@ -20,11 +20,10 @@ h6, .h6, .p6 { @apply text-xs; }
 
 body {
 	@apply bg-zinc-900 text-zinc-200 leading-normal;
-
 }
 
 .textarea {
-	@apply block w-full bg-zinc-950 px-3 py-2 font-mono resize-none overflow-x-hidden overflow-y-scroll;
+	@apply block w-full bg-zinc-950 px-3 py-3 font-mono resize-none overflow-x-hidden overflow-y-scroll focus:outline-none;
 }
 
 .button {
