@@ -1,5 +1,5 @@
 import { CssProps } from ".";
-import examplePictureScript from './examplePictureScript.json';
+import examplePictureScripts from './examplePictureScripts.json';
 
 
 
@@ -16,4 +16,4 @@ export interface PictureDS extends CssProps {
 	children: PictureNodeDS[]
 }
 
-export const examplePicture: PictureDS = examplePictureScript;
+export const examplePictures: PictureDS[] = examplePictureScripts.examples;

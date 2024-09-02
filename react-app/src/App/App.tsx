@@ -4,7 +4,7 @@ import { red } from 'redicons';
 import rediconsJson from './redicons.json';
 import { Footer, Header } from './components';
 import React from 'react';
-import { PictureDS, examplePicture } from './data/picture';
+import { PictureDS, examplePictures } from './data/picture';
 import Renderer from './components/Renderer/Renderer';
 import { indentedJson } from './utils';
 
@@ -12,11 +12,12 @@ import { indentedJson } from './utils';
 
 red.addIcons(rediconsJson.icons);
 
-const DEFAULT_TEXT: string = indentedJson(examplePicture);
+const firstExamplePicture = examplePictures[0];
+const DEFAULT_TEXT: string = indentedJson(firstExamplePicture);
 
 export default function App () {
 	const [text, setText] = React.useState(DEFAULT_TEXT);
-	const [picture, setPicture] = React.useState(examplePicture);
+	const [picture, setPicture] = React.useState(firstExamplePicture);
 	const [showPicture, setShowPicture] = React.useState(false);
 
 	React.useEffect(() => {
