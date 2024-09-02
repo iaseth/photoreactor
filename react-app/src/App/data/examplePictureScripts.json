@@ -1,7 +1,61 @@
 {
     "examples": [
         {
-            "title":"Example",
+            "title":"Example One",
+            "height":"1080px",
+            "width":"1080px",
+            "padding":"200px 100px",
+            "backgroundColor":"#2563eb",
+            "color":"#eee",
+            "fontFamily":"Ubuntu",
+            "fontWeight":"700",
+            "borderColor":"#60a5fa",
+            "borderWidth":"10px",
+            "borderStyle":"solid",
+            "children":[
+                {"text":"Photoreactor","fontSize":"96px", "backgroundColor": "#444"},
+                {"text":"Render JSON to HTML","fontSize":"48px", "padding": "80px 0px"},
+                {"text":"Created by Ankur Seth", "fontSize":"32px", "padding": "400px 0px 0px 0px"}
+            ]
+        },
+        {
+            "title":"Example Two",
+            "height":"1080px",
+            "width":"1080px",
+            "padding":"200px 100px",
+            "backgroundColor":"#2563eb",
+            "color":"#eee",
+            "fontFamily":"Ubuntu",
+            "fontWeight":"700",
+            "borderColor":"#60a5fa",
+            "borderWidth":"10px",
+            "borderStyle":"solid",
+            "children":[
+                {"text":"Photoreactor","fontSize":"96px", "backgroundColor": "#444"},
+                {"text":"Render JSON to HTML","fontSize":"48px", "padding": "80px 0px"},
+                {"text":"Created by Ankur Seth", "fontSize":"32px", "padding": "400px 0px 0px 0px"}
+            ]
+        },
+        {
+            "title":"Example Three",
+            "height":"1080px",
+            "width":"1080px",
+            "padding":"200px 100px",
+            "backgroundColor":"#2563eb",
+            "color":"#eee",
+            "fontFamily":"Ubuntu",
+            "fontWeight":"700",
+            "borderColor":"#60a5fa",
+            "borderWidth":"10px",
+            "borderStyle":"solid",
+            "children":[
+                {"text":"Photoreactor","fontSize":"96px", "backgroundColor": "#444"},
+                {"text":"Render JSON to HTML","fontSize":"48px", "padding": "80px 0px"},
+                {"text":"Created by Ankur Seth", "fontSize":"32px", "padding": "400px 0px 0px 0px"}
+            ]
+        },
+        {
+            "title":"Example Four",
             "height":"1080px",
             "width":"1080px",
             "padding":"200px 100px",

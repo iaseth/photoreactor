@@ -20,6 +20,7 @@ h6, .h6, .p6 { @apply text-xs; }
 
 body {
 	@apply bg-zinc-900 text-zinc-200 leading-normal;
+	font-family: Ubuntu, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .textarea {
